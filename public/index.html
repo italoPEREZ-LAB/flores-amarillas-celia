@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#101b17"><meta name="description" content="Un pequeño universo de flores amarillas, hecho pensando en ti.">
+<title>Celia · Un universo amarillo para ti</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='18' fill='%23101b17'/%3E%3Ctext x='32' y='46' text-anchor='middle' font-size='42'%3E🌻%3C/text%3E%3C/svg%3E">
+<link rel="stylesheet" href="styles.css"><script defer src="config.js"></script><script defer src="app.js"></script>
+</head>
+<body>
+<div class="ambient" aria-hidden="true"></div><div id="particles" aria-hidden="true"></div>
+<header><a href="./" class="brand" aria-label="Volver al comienzo"><span>✳</span> UN UNIVERSO AMARILLO</a><button id="music" class="music" aria-pressed="false"><span aria-hidden="true">♫</span> <span id="music-label">Activar música</span></button></header>
+<main>
+<section id="welcome" class="welcome" aria-labelledby="welcome-title">
+ <div class="entry-art" aria-hidden="true"><img src="assets/garden.png" alt=""><div class="entry-shade"></div></div>
+ <div class="entry-content"><p class="eyebrow">21 DE SEPTIEMBRE · FLORES AMARILLAS</p>
+ <div class="small-orbit" aria-hidden="true">✧</div>
+ <p class="for-you">Una sorpresa para <span data-name>Celia</span></p>
+ <h1 id="welcome-title">Hay algo bonito<br><em>esperándote.</em></h1>
+ <p class="intro">Hay flores que no necesitan estar cerca<br>para llegar a alguien especial.</p>
+ <button id="enter" class="gold-button">Abrir mi sorpresa <span aria-hidden="true">↗</span></button>
+ <p class="entry-note">Hecho con ilusión. Pensando en ti.</p></div>
+ <div class="entry-bottom"><span>UN DETALLE QUE FLORECE</span><span>Para ti, con cariño ♡</span></div>
+</section>
+<section id="garden" class="garden" hidden aria-labelledby="garden-title">
+ <div class="garden-heading"><p class="eyebrow">PARA TI, <span data-name>CELIA</span></p><h2 id="garden-title" tabindex="-1">Un poquito de sol.<br><em>Solo para ti.</em></h2><p id="reveal-line">Hay personas que hacen más bonito el mundo. Tú eres una de ellas, Celia.</p></div>
+ <div class="garden-grid">
+  <div class="art-panel" id="art-panel"><img id="garden-image" src="assets/garden.png" alt="Girasoles y margaritas amarillas iluminados por un portal dorado en un jardín fantástico"><div class="art-caption"><span>FLORES QUE NO SE MARCHITAN</span><p>Un jardín, infinitas sonrisas.</p></div><div id="bloom" aria-hidden="true"></div></div>
+  <div class="letter-panel"><div class="letter-top"><span>UNA FLOR, UN DESEO</span><span id="counter">01 / 06</span></div><div class="quote-mark" aria-hidden="true">“</div><blockquote id="quote" aria-live="polite"></blockquote><p class="quote-signature">Con cariño, para <span data-name>Celia</span>.</p><div class="letter-bottom"><button id="next" class="text-button">Otra flor para ti <span aria-hidden="true">↗</span></button><div class="dots" id="dots" aria-hidden="true"></div></div>
+  <div class="reply"><p class="eyebrow">AHORA, TUS PALABRAS</p><h3>¿Me regalas una sonrisa?</h3><label for="message">Si quieres, déjame unas palabras.</label><textarea id="message" rows="2" maxlength="700" placeholder="Gracias por mis flores amarillas… 💛"></textarea><a id="whatsapp" class="gold-button whatsapp" target="_blank" rel="noopener noreferrer">Enviarte una sonrisa <span aria-hidden="true">↗</span></a><p class="reply-note">Se abrirá WhatsApp con tu mensaje listo. Tú decides cuándo enviarlo.</p></div></div>
+ </div>
+ <div class="closing"><span aria-hidden="true">✧</span><p>Ojalá estas flores te abracen un poquito el corazón.</p><button id="again" class="text-button">Volver a abrir mi sorpresa</button></div>
+</section>
+</main>
+<div id="portal" class="portal" aria-hidden="true"><div></div><span>Algo bonito está floreciendo…</span></div>
+<audio id="audio" loop preload="none" src="assets/ambiente.wav"></audio>
+<noscript><p class="noscript">Activa JavaScript para abrir el portal y leer tu sorpresa.</p></noscript>
+</body></html>
